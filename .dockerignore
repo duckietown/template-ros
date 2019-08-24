@@ -2,5 +2,8 @@
 **
 
 # Allow files and directories
+!dependencies-apt.txt
+!dependencies-py.txt
 !packages
-!requirements.txt
+
+# Add your repo-specific files here
