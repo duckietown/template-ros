@@ -2,8 +2,11 @@
 **
 
 # Allow files and directories
+!assets
+!packages
 !dependencies-apt.txt
 !dependencies-py.txt
-!packages
+!launch.sh
 
-# Add your repo-specific files here
+# YOUR FILES LISTED BELOW THIS LINE (IMPORTANT: PREPEND !)
+# ----------------------------------------------------------------------------

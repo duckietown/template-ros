@@ -32,6 +32,12 @@ RUN pip install -r ${REPO_PATH}/dependencies-py.txt
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh && \
   catkin build \
     --workspace ${CATKIN_WS_DIR}/
+
+# define launch script
+ENV LAUNCHFILE "${REPO_PATH}/launch.sh"
+
+# define command
+CMD ["bash", "-c", "${LAUNCHFILE}"]
 # <== Do not change this code
 # <==================================================
 
