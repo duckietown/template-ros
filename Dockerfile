@@ -6,9 +6,10 @@ ARG REPO_NAME="<REPO_NAME_HERE>"
 ARG ARCH=arm32v7
 ARG MAJOR=devel20
 ARG BASE_TAG=${MAJOR}-${ARCH}
+ARG BASE_IMAGE=dt-ros-commons
 
 # define base image
-FROM duckietown/dt-ros-commons:${BASE_TAG}
+FROM duckietown/${BASE_IMAGE}:${BASE_TAG}
 
 # define repository path
 ARG REPO_NAME
