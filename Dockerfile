@@ -4,7 +4,7 @@ ARG REPO_NAME="<REPO_NAME_HERE>"
 # ==================================================>
 # ==> Do not change this code
 ARG ARCH=arm32v7
-ARG MAJOR=devel20
+ARG MAJOR=daffy
 ARG BASE_TAG=${MAJOR}-${ARCH}
 
 # define base image
