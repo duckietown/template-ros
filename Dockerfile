@@ -48,8 +48,5 @@ CMD ["bash", "-c", "${LAUNCHFILE}"]
 # <== Do not change this code
 # <==================================================
 
-# define command
-CMD "<CMD_HERE>"
-
 # maintainer
 LABEL maintainer="<YOUR_FULL_NAME> (<YOUR_EMAIL_ADDRESS>)"
