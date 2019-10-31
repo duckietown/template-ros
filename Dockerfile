@@ -45,6 +45,10 @@ ENV LAUNCHFILE "${REPO_PATH}/launch.sh"
 
 # define command
 CMD ["bash", "-c", "${LAUNCHFILE}"]
+
+# store module name
+LABEL DT_MODULE_NAME "${REPO_NAME}"
+ENV DT_MODULE_NAME "${REPO_NAME}"
 # <== Do not change this code
 # <==================================================
 
