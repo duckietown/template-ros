@@ -19,16 +19,12 @@ WORKDIR "${REPO_PATH}"
 # create repo directory
 RUN mkdir -p "${REPO_PATH}"
 
-# copy dependencies file (apt)
-
 # install apt dependencies
 COPY ./dependencies-apt.txt "${REPO_PATH}/"
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     $(awk -F: '/^[^#]/ { print $1 }' dependencies-apt.txt | uniq) \
   && rm -rf /var/lib/apt/lists/*
-
-# copy dependencies file (python)
 
 # install python dependencies
 COPY ./dependencies-py.txt "${REPO_PATH}/"
