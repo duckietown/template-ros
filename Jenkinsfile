@@ -4,6 +4,7 @@ pipeline {
     stage('Prepare') {
       steps {
         sh 'pip3 install --upgrade duckietown-shell'
+        sh 'dts --set-version daffy exit'
         sh 'dts update'
       }
     }
