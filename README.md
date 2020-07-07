@@ -23,21 +23,25 @@ a template for your new repository.
 
 ### 3. Define dependencies
 
-List the dependencies in the files `dependencies-apt.txt` and
-`dependencies-py.txt` (apt packages and pip packages respectively).
+List the dependencies in the files `dependencies-apt.txt`,
+`dependencies-py.txt`, and `dependencies-py3.txt`.
 
 
 ### 4. Place your code
 
-Place your ROS packages in the directory `/packages` of
+Place your code in the directory `/packages/` of
 your new repository.
 
-**NOTE:** Do not use absolute paths in your code,
-the code you place under `/packages` will be copied to
-a different location later.
 
+### 5. Setup launchers
 
-### 5. Setup the launchfile
+The directory `/launchers` can contain as many launchers (launching scripts)
+as you want. A default launcher called `default.sh` must always be present.
 
-Change the file `launch.sh` in your repository to
-launch your code.
+If you create an executable script (i.e., a file with a valid shebang statement)
+a launcher will be created for it. For example, the script file 
+`/launchers/my-launcher.sh` will be available inside the Docker image as the binary
+`dt-launcher-my-launcher`.
+
+When launching a new container, you can simply provide `dt-launcher-my-launcher` as
+command.
