@@ -23,7 +23,7 @@ ARG BASE_IMAGE
 ARG LAUNCHER
 
 # check build arguments
-RUN /utils/build_check "${REPO_NAME}" "${MAINTAINER}"
+RUN dt-build-env-check "${REPO_NAME}" "${MAINTAINER}"
 
 # define/create repository path
 ARG REPO_PATH="${CATKIN_WS_DIR}/src/${REPO_NAME}"
@@ -65,7 +65,7 @@ RUN . /opt/ros/${ROS_DISTRO}/setup.sh && \
 # install launcher scripts
 COPY ./launchers/. "${LAUNCH_PATH}/"
 COPY ./launchers/default.sh "${LAUNCH_PATH}/"
-RUN /utils/install_launchers "${LAUNCH_PATH}"
+RUN dt-install-launchers "${LAUNCH_PATH}"
 
 # define default command
 CMD ["bash", "-c", "dt-launcher-${DT_LAUNCHER}"]
