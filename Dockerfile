@@ -28,7 +28,7 @@ ARG BASE_IMAGE
 ARG LAUNCHER
 
 # check build arguments
-RUN dt-build-env-check "${REPO_NAME}" "${MAINTAINER}"
+RUN dt-build-env-check "${REPO_NAME}" "${MAINTAINER}" "${DESCRIPTION}"
 
 # define/create repository path
 ARG REPO_PATH="${CATKIN_WS_DIR}/src/${REPO_NAME}"
