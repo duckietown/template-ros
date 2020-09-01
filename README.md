@@ -23,8 +23,8 @@ a template for your new repository.
 
 ### 3. Define dependencies
 
-List the dependencies in the files `dependencies-apt.txt`,
-`dependencies-py.txt`, and `dependencies-py3.txt`.
+List the dependencies in the files `dependencies-apt.txt` and
+`dependencies-py3.txt` (apt packages and pip packages respectively).
 
 
 ### 4. Place your code
