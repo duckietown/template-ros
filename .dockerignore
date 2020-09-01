@@ -5,7 +5,6 @@
 !assets
 !packages
 !dependencies-apt.txt
-!dependencies-py.txt
 !dependencies-py3.txt
 !launchers
 
