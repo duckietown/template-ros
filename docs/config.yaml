@@ -4,7 +4,7 @@ docs_config_version: v1
 project: "REPOSITORY_NAME_HERE"
 copyright: "Duckietown"
 author: "YOUR_NAME_HERE"
-version: "daffy"
+version: "ente"
 custom_sections:  [
   "Configuration",
   "Subscribers",
