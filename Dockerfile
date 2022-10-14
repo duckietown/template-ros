@@ -7,10 +7,11 @@ ARG ICON="cube"
 
 # ==================================================>
 # ==> Do not change the code below this line
+ARG ARCH
 ARG DISTRO=daffy
 ARG DOCKER_REGISTRY=docker.io
 ARG BASE_IMAGE=dt-ros-commons
-ARG BASE_TAG=${DISTRO}
+ARG BASE_TAG=${DISTRO}-${ARCH}
 ARG LAUNCHER=default
 
 # define base image
