@@ -8,12 +8,12 @@ ARG ICON="cube"
 # ==================================================>
 # ==> Do not change the code below this line
 ARG DISTRO=daffy
-ARG BASE_TAG=${DISTRO}
+ARG DOCKER_REGISTRY=docker.io
 ARG BASE_IMAGE=dt-ros-commons
+ARG BASE_TAG=${DISTRO}
 ARG LAUNCHER=default
 
 # define base image
-ARG DOCKER_REGISTRY=docker.io
 FROM ${DOCKER_REGISTRY}/duckietown/${BASE_IMAGE}:${BASE_TAG} as BASE
 
 # recall all arguments
