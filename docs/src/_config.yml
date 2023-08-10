@@ -1,0 +1,41 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: BOOK_NAME_HERE
+author: The Duckietown Team
+logo: logo.png
+# Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
+exclude_patterns: ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/duckietown/BOOK_NAME_HERE
+  path_to_book: docs/src
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  favicon: _images/favicon.ico
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  extra_navbar: ""
+
+sphinx:
+  extra_extensions: []
+  config:
+    intersphinx_mapping: {}
