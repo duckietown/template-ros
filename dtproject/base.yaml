@@ -1,0 +1,4 @@
+#registry: docker.io
+#organization: duckietown
+#tag: <distro>-<arch>
+repository: dt-ros-commons
