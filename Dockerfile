@@ -48,8 +48,8 @@ RUN dt-args-check \
     "ARCH" "${ARCH}" \
     "DISTRO" "${DISTRO}" \
     "DOCKER_REGISTRY" "${DOCKER_REGISTRY}" \
-    "BASE_REPOSITORY" "${BASE_REPOSITORY}"
-RUN dt-check-project-format "${PROJECT_FORMAT_VERSION}"
+    "BASE_REPOSITORY" "${BASE_REPOSITORY}" \
+    && dt-check-project-format "${PROJECT_FORMAT_VERSION}"
 
 # define/create repository path
 ARG PROJECT_PATH="${SOURCE_DIR}/${PROJECT_NAME}"
